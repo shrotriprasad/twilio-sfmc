@@ -9,7 +9,7 @@ var activity = require('./activity');
 exports.index = function(req, res){
     if( !req.session.token ) {
         res.render( 'index', {
-            title: 'Unauthenticated',
+            title: 'Authenticated',
             errorMessage: 'This app may only be loaded via Salesforce Marketing Cloud',
         });
     } else {
