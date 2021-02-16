@@ -16,7 +16,7 @@
         "execute": {
             "inArguments": [
                 {
-                  "email": "{{Contact.Default.EmailAddress}}",
+                  "email": "{{Contact.Attribute.Contacts.Email}}",
                   "to": "{{Contact.Attribute.Contacts.Mobile}}" 
                 }               
             ],
