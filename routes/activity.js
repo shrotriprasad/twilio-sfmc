@@ -101,7 +101,14 @@ exports.execute = function (req, res) {
     const authToken = requestBody.authToken;
     const to = requestBody.to;
     const from = requestBody.messagingService;
-    const body = requestBody.body;;
+    const body = requestBody.body;
+
+
+    const edomainid = requestBody.edomainid;
+    const eauthtoken = requestBody.eauthtoken;
+    const eclientID = requestBody.eclientID;
+    const etextprofileID = requestBody.etextprofileID;
+    const emessageBody = requestBody.emessageBody;
 
     /* const client = require('twilio')(accountSid, authToken); 
      
@@ -125,7 +132,7 @@ exports.execute = function (req, res) {
     const data = JSON.stringify({
         textAction: 'TEXT_ALERTS',
         textProfileId: 'df757117-8891-448b-aed0-08a0b0eaf7e1',
-        customerMobile: '+14084829875',
+        customerMobile: '+12103872811',
         message: 'Dear John, the payment of $50 is due on 15-Sep-2020'
     })
     
@@ -157,6 +164,9 @@ exports.execute = function (req, res) {
     
     req.write(data)
     req.end()
+
+    logData(req);
+    res.send(200, 'Publish');
 
     // Used to decode JWT
     // JWT(req.body, process.env.jwtSecret, (err, decoded) => {
