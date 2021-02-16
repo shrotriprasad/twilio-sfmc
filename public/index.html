@@ -32,29 +32,62 @@
         }
     </style>
 
+
 </head>
 <body>
 <div id="step1" class="step">
-    <div class="panel">
-        <h2>Create a Twilio SMS message:</h2>
-        <p>Twilio's Programmable SMS has the features you’ll need to build quickly and scale to production. We’ve solved the hard problems so you don’t have to.  <a href="https://www.twilio.com/sms" target="_blank">Learn more about about Twilio SMS here</a>.</p>
-        <hr>
-        <div class="form-group">
-            <div><label for="messageBody">Create message body:</label></div>
-            <input class="form-control" id="messageBody" type="text" name="messageBody" value="">        
-        </div>           
-        <div class="form-group">
-            <div><label for="messagingService">Messaging Service SID:</label></div>
-            <input class="form-control" id="messagingService" type="text" name="messagingService" value="">
-        </div>     
-        <div class="form-group">
-            <div><label for="accountSID">Account SID:</label></div>
-            <input class="form-control" id="accountSID" type="text" name="accountSID" value="">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Twilio Specific Configuration -->
+            <div class="col border border-primary">
+                <h2>Create a Twilio SMS message:</h2>
+                <hr>
+                <div class="form-group">
+                    <div><label for="messageBody">Create message body:</label></div>
+                    <input class="form-control" id="messageBody" type="text" name="messageBody" value="">        
+                </div>           
+                <div class="form-group">
+                    <div><label for="messagingService">Messaging Service SID:</label></div>
+                    <input class="form-control" id="messagingService" type="text" name="messagingService" value="">
+                </div>     
+                <div class="form-group">
+                    <div><label for="accountSID">Account SID:</label></div>
+                    <input class="form-control" id="accountSID" type="text" name="accountSID" value="">
+                </div>
+                <div class="form-group">
+                    <div><label for="authToken">Auth Token:</label></div>
+                    <input class="form-control" id="authToken" type="text" name="authToken" value="">
+                </div>
+            </div>
+            
+            <!-- Eltropy Specific Configuration -->
+            <div class="col border border-primary">
+                <h2>Create a SMS message Via Eltropy's API:</h2>
+                <hr>
+                <div class="form-group">
+                    <div><label for="edomainID">Domain ID:</label></div>
+                    <input class="form-control" id="edomainID" type="text" name="edomainID" value="">
+                </div>     
+                <div class="form-group">
+                    <div><label for="eauthtoken">Auth Token:</label></div>
+                    <input class="form-control" id="eauthtoken" type="text" name="eauthtoken" value="">
+                </div>
+                <div class="form-group">
+                    <div><label for="eclientID">Client ID:</label></div>
+                    <input class="form-control" id="eclientID" type="text" name="eclientID" value="">
+                </div>
+                <div class="form-group">
+                    <div><label for="etextprofileID">Text Profile ID:</label></div>
+                    <input class="form-control" id="etextprofileID" type="text" name="etextprofileID" value="">
+                </div>
+                <div class="form-group">
+                    <div><label for="emessageBody">Create message body:</label></div>
+                    <input class="form-control" id="emessageBody" type="text" name="emessageBody" value="">        
+                </div>           
+            </div>
+
+
         </div>
-        <div class="form-group">
-            <div><label for="authToken">Auth Token:</label></div>
-            <input class="form-control" id="authToken" type="text" name="authToken" value="">
-        </div>    
     </div>
 </div>
 </body>
