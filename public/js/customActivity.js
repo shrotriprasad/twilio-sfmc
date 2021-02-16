@@ -66,6 +66,27 @@ define([
                     $('#messageBody').val(val);
                 }                                                               
 
+                if (key === '#edomainID') {
+                    $('#edomainID').val(val);
+                }
+
+                if (key === '#eauthtoken') {
+                    $('#eauthtoken').val(val);
+                }
+
+                if (key === '#eclientID') {
+                    $('#eclientID').val(val);
+                }
+
+                if (key === '#etextprofileID') {
+                    $('#etextprofileID').val(val);
+                }
+
+                if (key === '#emessageBody') {
+                    $('emessageBody').val(val);
+                }
+
+
             })
         });
 

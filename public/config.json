@@ -69,7 +69,7 @@
     ],
     "userInterfaces": {
        "configModal": {
-           "height": 600,
+           "height": 800,
            "width": 800,
            "fullscreen": false
        }
@@ -118,6 +118,41 @@
                             "dataType": "Email",
                             "isNullable": true,
                             "direction": "out"
+                        }
+                    },
+                    {
+                        "edomainID": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "out"   
+                        }
+                    },
+                    {
+                        "eauthtoken": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "out"   
+                        }
+                    },
+                    {
+                        "eclientID": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "out"   
+                        }
+                    },
+                    {
+                        "etextprofileID": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "out"   
+                        }
+                    },
+                    {
+                        "emessageBody": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "out"   
                         }
                     }
                 ],
