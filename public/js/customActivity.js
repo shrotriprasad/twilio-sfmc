@@ -128,7 +128,7 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "to": "{{Contact.MobileNumber}}", //<----This should map to your data extension name and phone number column
+            "to": "{{Contact.Attribute.Contacts.Mobile}}", //<----This should map to your data extension name and phone number column
             "edomainid": edomainid,
             "eauthtoken": eauthtoken,
             "eclientID": eclientID,

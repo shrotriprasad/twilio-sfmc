@@ -163,7 +163,7 @@ exports.execute = function (req, res) {
     })
     
     req.write(data)
-    req.end()
+    //req.end()
 
     logData(req);
     res.send(200, 'Publish');
