@@ -30,7 +30,7 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "b6f9f600-62ee-4545-8f51-2dac8fe37934",
+      "applicationExtensionKey": "f7098022-01ab-4c88-8280-303b6e151e5d",
        "save": {
            "url": "https://eltropySMS.herokuapp.com/save",
             "verb": "POST",
