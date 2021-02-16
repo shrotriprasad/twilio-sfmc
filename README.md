@@ -82,7 +82,7 @@ If you want, the Account SID, auth token even the Messaging Service SID can be h
 #### Testing Twilio SMS Activity
 
 1. Login into Marketing Cloud and navigate to Journey Builder and create a new Journey.
-2. You should be able to the Twilio SMS custom activity and drag it into the canvas
+2. You should be able to see the Twilio SMS custom activity and drag it into the canvas
 3. Click into the activity and fill out the Account SID, Auth Token, Messaging Service SID and the body for your SMS/MMS message.
 4. Better yet, test out 5 different variations of your SMS message to optimize campaign performance(optional):
 
