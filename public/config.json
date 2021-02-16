@@ -7,7 +7,7 @@
     "type": "REST",
     "lang": {
        "en-US": {
-           "name": "Eltropy SMS",
+           "name": "Eltropy MySMS",
            "description": "Send SMS with Journey Builder via Eltropy",
            "TwilioMessage":"test"
        }
