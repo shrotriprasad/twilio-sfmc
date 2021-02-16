@@ -95,12 +95,24 @@ define([
         var messagingService = $('#messagingService').val();
         var body = $('#messageBody').val();
 
+        //Eltropy Parameters
+        var edomainid = $('#edomainID').val();
+        var eauthtoken = $('#eauthtoken').val();
+        var eclientID = $('#eclientID').val();
+        var etextprofileID = $('#etextprofileID').val();
+        var emessageBody = $('#emessageBody').val();
+
         payload['arguments'].execute.inArguments = [{
             "accountSid": accountSid,
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "to": "{{Contact.Attribute.TwilioV1.TwilioNumber}}" //<----This should map to your data extension name and phone number column
+            "to": "{{Contact.MobileNumber}}", //<----This should map to your data extension name and phone number column
+            "edomainid": edomainid,
+            "eauthtoken": eauthtoken,
+            "eclientID": eclientID,
+            "etextprofileID": etextprofileID,
+            "emessageBody": emessageBody
         }];
 
         payload['metaData'].isConfigured = true;

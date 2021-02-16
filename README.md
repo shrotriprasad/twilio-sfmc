@@ -86,8 +86,3 @@ If you want, the Account SID, auth token even the Messaging Service SID can be h
 3. Click into the activity and fill out the Account SID, Auth Token, Messaging Service SID and the body for your SMS/MMS message.
 4. Better yet, test out 5 different variations of your SMS message to optimize campaign performance(optional):
 
-#### Want to learn more?
-
-If you'd like to learn more about Twilio and how to integrate its services into Journey Builder Custom Activities, email me at [jmaitz@twilio.com](mailto:jmaitz@twilio.com)
-
-Also, follow Twilio on [LinkedIn](https://www.linkedin.com/company/twilio-inc-/)
