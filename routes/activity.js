@@ -103,7 +103,7 @@ exports.execute = function (req, res) {
     const from = requestBody.messagingService;
     const body = requestBody.body;;
 
-    const client = require('twilio')(accountSid, authToken); 
+    /* const client = require('twilio')(accountSid, authToken); 
      
     client.messages 
           .create({ 
@@ -113,12 +113,50 @@ exports.execute = function (req, res) {
            }) 
           .then(message => console.log(message.sid)) 
           .done();
-
+ */
 
 
     // FOR TESTING
-    logData(req);
-    res.send(200, 'Publish');
+    //logData(req);
+    //res.send(200, 'Publish');
+
+    const https = require('https')
+
+    const data = JSON.stringify({
+        textAction: 'TEXT_ALERTS',
+        textProfileId: 'df757117-8891-448b-aed0-08a0b0eaf7e1',
+        customerMobile: '+14084829875',
+        message: 'Dear John, the payment of $50 is due on 15-Sep-2020'
+    })
+    
+    const options = {
+      hostname: 'c1cu.uateltropy.com',
+      port: 443,
+      path: '/messages/service/send/text/v1',
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Content-Length': data.length,
+        'Accept-Language' : 'en',
+        'Authorization' : 'bearer 76cbcc97-2ac0-425e-9374-3fa31c04d9d0',
+        'Eltropy-Client-ID' : '7a16d9b2-35e4-4587-a57e-d33ec80cc082'
+      }
+    }
+    
+    const req = https.request(options, res => {
+      console.log(`statusCode: ${res.statusCode}`)
+    
+      res.on('data', d => {
+        process.stdout.write(d)
+      })
+    })
+    
+    req.on('error', error => {
+      console.error(error)
+    })
+    
+    req.write(data)
+    req.end()
 
     // Used to decode JWT
     // JWT(req.body, process.env.jwtSecret, (err, decoded) => {
