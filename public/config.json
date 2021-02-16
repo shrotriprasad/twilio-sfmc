@@ -17,7 +17,7 @@
             "inArguments": [
                 {
                   "email": "{{Contact.Default.EmailAddress}}",
-                  "to": "{{Contact.MobileNumber}}" 
+                  "to": "{{Contact.Attribute.Contacts.Mobile}}" 
                 }               
             ],
             "outArguments": [],
