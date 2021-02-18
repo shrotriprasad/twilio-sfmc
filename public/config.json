@@ -26,18 +26,18 @@
             "body": "",
             "format": "json",
             "useJwt": false,
-            "timeout": 2000
+            "timeout": 10000
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "f7098022-01ab-4c88-8280-303b6e151e5d",
+      "applicationExtensionKey": "7c7b9ca3-246f-4ce6-8cba-09ca160884a9",
        "save": {
            "url": "https://eltropysms.herokuapp.com/save",
             "verb": "POST",
             "body": "",
             "format": "json",
             "useJwt": false,
-            "timeout": 2000
+            "timeout": 10000
        },
        "publish": {
            "url": "https://eltropysms.herokuapp.com/publish",
@@ -45,7 +45,7 @@
             "body": "",
             "format": "json",
             "useJwt": false,
-            "timeout": 2000
+            "timeout": 10000
        },
        "validate": {
            "url": "https://eltropysms.herokuapp.com/validate",
@@ -53,7 +53,7 @@
             "body": "",
             "format": "json",
             "useJwt": false,
-            "timeout": 2000
+            "timeout": 10000
        },
        "stop": {
            "url": "https://eltropysms.herokuapp.com/stop",
@@ -61,7 +61,7 @@
             "body": "",
             "format": "json",
             "useJwt": false,
-            "timeout": 2000
+            "timeout": 10000
        }
     },
     "wizardSteps": [
