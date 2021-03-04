@@ -1,25 +1,23 @@
 {
     "workflowApiVersion": "1.1",
     "metaData": {
-       "icon": "images/iconSmall.png",
-       "category": "message"
+        "icon": "images/iconSmall.png",
+        "category": "message"
     },
     "type": "REST",
     "lang": {
-       "en-US": {
-           "name": "Twilio SMS",
-           "description": "Send Twilio SMS with Journey Builder",
-           "TwilioMessage":"test"
-       }
+        "en-US": {
+            "name": "Twilio SMS",
+            "description": "Send Twilio SMS with Journey Builder",
+            "TwilioMessage": "test"
+        }
     },
     "arguments": {
         "execute": {
-            "inArguments": [
-                {
-                  "email": "{{Contact.Attribute.Contacts.Email}}",
-                  "to": "{{Contact.Attribute.Contacts.Mobile}}" 
-                }               
-            ],
+            "inArguments": [{
+                "email": "{{Contact.Attribute.Contacts.Email}}",
+                "to": "{{Contact.Attribute.Contacts.Mobile}}"
+            }],
             "outArguments": [],
             "url": "https://eltropysms.herokuapp.com/journeybuilder/execute",
             "verb": "POST",
@@ -30,89 +28,88 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "7c7b9ca3-246f-4ce6-8cba-09ca160884a9",
-       "save": {
-           "url": "https://eltropysms.herokuapp.com/save",
+        "applicationExtensionKey": "3ca25c6c-df4d-49ae-acd2-06aa5389781a",
+        "save": {
+            "url": "https://eltropysms.herokuapp.com/save",
             "verb": "POST",
             "body": "",
             "format": "json",
             "useJwt": false,
             "timeout": 10000
-       },
-       "publish": {
-           "url": "https://eltropysms.herokuapp.com/publish",
+        },
+        "publish": {
+            "url": "https://eltropysms.herokuapp.com/publish",
             "verb": "POST",
             "body": "",
             "format": "json",
             "useJwt": false,
             "timeout": 10000
-       },
-       "validate": {
-           "url": "https://eltropysms.herokuapp.com/validate",
+        },
+        "validate": {
+            "url": "https://eltropysms.herokuapp.com/validate",
             "verb": "POST",
             "body": "",
             "format": "json",
             "useJwt": false,
             "timeout": 10000
-       },
-       "stop": {
-           "url": "https://eltropysms.herokuapp.com/stop",
+        },
+        "stop": {
+            "url": "https://eltropysms.herokuapp.com/stop",
             "verb": "POST",
             "body": "",
             "format": "json",
             "useJwt": false,
             "timeout": 10000
-       }
+        }
     },
     "wizardSteps": [
-       { "label": "Create SMS Message", "key": "step1" }
+        { "label": "Create SMS Message", "key": "step1" }
     ],
     "userInterfaces": {
-       "configModal": {
-           "height": 600,
-           "width": 800,
-           "fullscreen": false
-       }
+        "configModal": {
+            "height": 600,
+            "width": 800,
+            "fullscreen": false
+        }
     },
     "schema": {
         "arguments": {
             "execute": {
-                "inArguments": [
-                    {
+                "inArguments": [{
                         "accountSid": {
                             "dataType": "String",
                             "isNullable": false,
-                            "direction": "out"   
+                            "direction": "out"
                         }
-                    },                    
+                    },
                     {
                         "authToken": {
                             "dataType": "String",
                             "isNullable": false,
-                            "direction": "out"   
+                            "direction": "out"
                         }
-                    },                    
+                    },
                     {
                         "from": {
                             "dataType": "Phone",
                             "isNullable": true,
-                            "direction": "out"   
+                            "direction": "out"
                         }
-                    },                    
+                    },
                     {
                         "to": {
                             "dataType": "Phone",
                             "isNullable": false,
-                            "direction": "out"   
+                            "direction": "out"
                         }
                     },
                     {
                         "body": {
                             "dataType": "String",
                             "isNullable": false,
-                            "direction": "out"   
+                            "direction": "out"
                         }
-                    },                    
+                    },
                     {
                         "email": {
                             "dataType": "Email",
